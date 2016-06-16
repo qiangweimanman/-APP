@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../common/co/css/co.css">
+    <style>
+    	.ui-nav-bar ~ .ui-content{
+    		bottom:50px;
+    	}
+    </style>
+</head>
+<body>
+	<header class="ui-nav-bar" style="background-color: #5C78FD;">
+	        <div class="ui-nav-bar-inner">
+	        	<a class="ui-action-back ui-nav-bar-link" style="color: #ffffff !important;">
+	                <i class="ui-nav-bar-icon ui-nav-bar-left ui-icon-left-nav"><span class="ui-nav-bar-des"></span>
+	          		</i>
+	            </a>
+	            <h1 class="ui-nav-bar-title" style="color: #ffffff !important;">369Cloud</h1>
+	        </div>
+	 	</header>
+	 	<div class="ui-content"></div>
+	 	<div class="ui-tab-bar">
+            <a class="ui-tab-item">
+                <span class="ui-icon fa fa-shopping-cart"></span>
+                <span class="ui-tab-label">购物</span>
+            </a>
+            <a class="ui-tab-item">
+                <span class="ui-icon fa fa-tag"></span>
+                <span class="ui-tab-label">促销</span>
+            </a>
+            <a class="ui-tab-item">
+                <span class="ui-icon fa fa-comment"></span>
+                <span class="ui-tab-label">评论</span>
+            </a>
+            <a class="ui-tab-item">
+                <span class="ui-icon fa fa-user"></span>
+                <span class="ui-tab-label">商户</span>
+            </a>
+        </div>
+</body>
+<script src="../common/co/native.js"></script>	
+<script src="../common/co/dom.js"></script>
+<script src="../common/co/co.js"></script>
+<script>
+	var view = app.currentView();
+    domReady(function(require){
+    	var y = $('.ui-nav-bar').height();
+    	var height = $('.ui-content').height();
+       	var shop = view.createPopover(0,y,0,height);
+       	var sale = view.createPopover(0,y,0,height);
+       	var review = view.createPopover(0,y,0,height);
+       	var my = view.createPopover(0,y,0,height);
+       	shop.open('shop.html');
+       	require("tab");
+        var tab = $('.ui-tab-bar').tab()
+        tab.ref.on('activate',function(e,to,from){
+        	if(to == 0){
+        		shop.open('shop.html');
+        	}else if(to == 1){	
+        		sale.open('sale.html');
+        	}else if(to == 2){
+        		review.open('review.html');
+        	}else if(to == 3){
+        		my.open('my.html');
+        	}
+        });
+    });
+</script>
+</html>

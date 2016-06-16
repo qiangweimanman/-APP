@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="../common/co/css/co.css">
+    <link rel="stylesheet" href="../common/css/box.css">
+    <link rel="stylesheet" href="../common/css/color.css">
+    <link rel="stylesheet" href="../common/css/media.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+</head>
+<body>
+	<div class="box box-ov">
+	    <!-- 轮播图 start -->
+		<div id="slider" style = "height:10em" class="ui-slider">
+			<div class="ui-slider-group">
+				<div class="ui-slider-item">
+					<img class="ui-slider-img" src="images/ad1.png">
+				</div>
+				<div class="ui-slider-item">
+					<img class="ui-slider-img" src="images/ad2.png">
+				</div>
+				<div class="ui-slider-item">
+					<img class="ui-slider-img" src="images/ad3.png">
+				</div>
+				<div class="ui-slider-item">
+					<img class="ui-slider-img" src="images/ad4.png">
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图 end -->
+		<!-- 菜单 start -->
+		<div class="box padd-a box-pc">
+			<div class="box box-ov box-f1">
+			   <div class="lh-img1 bg-img lhimg"></div>
+			   <div class="iwith">扫二维码</div> 
+			</div>
+			<div class="box box-ov box-f1">
+			   <div class="lh-img2 bg-img lhimg"></div>
+			   <div class="iwith">位置</div>
+			</div>
+			<div class="box box-ov box-f1">
+			   <div class="lh-img3 bg-img lhimg"></div>
+			   <div class="iwith">周边</div>
+			</div>
+			<div class="box box-ov box-f1">
+			   <div class="lh-img4 bg-img lhimg"></div>
+			   <div class="iwith">天气</div>
+			</div>
+		</div>
+		<!-- 菜单 end -->
+		<!-- 菜单 start -->
+		<hr />
+		<!-- 商品 start -->
+		<div class="box box-ov">
+		    <!--水平一层-->
+		    <div class="box">
+		        <!--电子-->
+		        <div class="box box-f1 probox box-ac box-pc">
+		            <div class="a">
+		               <p>电子</p> 
+		               <p>Ele</p>
+		            </div>
+		            <div class="pro-img1 bg-img proimg"></div>
+		        </div>
+		        <!--电子-->
+		        <!--家居-->
+		        <div class="box box-f1 probox box-ac box-pc">
+		            <div class="a">
+		               <p>家居</p> 
+		               <p>House</p>
+		            </div>
+		            <div class="pro-img2 bg-img proimg"></div>
+		        </div>
+		        <!--家居-->
+		    </div> 
+		    <!--水平一层-->
+		    <!--水平二层-->
+		    <div class="box">
+		        <!--衣服-->
+		        <div class="box box-f1 probox box-ac box-pc">
+		            <div class="a">
+		               <p>衣服</p> 
+		               <p>Ele</p>
+		            </div>
+		            <div class="pro-img3 bg-img proimg"></div>
+		        </div>
+		        <!--衣服-->
+		        <!--鞋子-->
+		        <div class="box box-f1 probox box-ac box-pc">
+		            <div class="a">
+		               <p>鞋子</p> 
+		               <p>Ele</p>
+		            </div>
+		            <div class="pro-img4 bg-img proimg"></div>
+		        </div>
+		        <!--鞋子-->
+		    </div>
+		    <!--水平二层-->
+		</div>
+		<!-- 商品 end -->
+		<hr />
+		<div class="box box-ac box-pc">
+		    <div class="box box-f1 box-ac box-pc">
+		        <div class="ser-img1 bg-img serimg"></div>
+		    </div>
+		    <div class="box box-ov box-f1 box-ac box-pc">
+		        <div class="box box-f1 box-ac box-pc">
+		            <div class="ser-img2 bg-img serimg"></div>
+		        </div>
+		        <div class="box">
+		                <div class="ser-img3 bg-img serimg"></div>
+		                <div class="ser-img4 bg-img serimg"></div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</body>
+<script src="../common/co/native.js"></script>
+<script src="../common/co/dom.js"></script>
+<script src="../common/co/co.js"></script>
+<script>
+</script>
+<script>
+	domReady(function(require){
+		require("slider");
+		$('#slider').slider( { 
+			loop:true,
+			dots:true,
+			guide:true,
+			space:5
+		}).ref.on('slide',function(e,index){
+			console.log(index);
+		})
+
+	})
+</script>
+</html>

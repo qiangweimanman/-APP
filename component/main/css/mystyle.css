@@ -1,0 +1,77 @@
+body{
+	background-color: #fff;
+}
+.lh-img1{
+	background-image: url("../images/fragmet_express.png");
+}
+.lh-img2{
+	background-image: url("../images/fragmet_lottery.png");
+}
+.lh-img3{
+	background-image: url("../images/fragmet_car.png");
+}
+.lh-img4{
+	background-image: url("../images/fragmet_weather.png");
+}
+.lhimg{
+	height: 2.5em;
+}
+.iwith{
+	width:100%;
+	margin-top: .5em;
+	text-align: center;
+	font-size: 1em;
+}
+hr{
+	width: 100%;
+	height: .5em;
+	background-color: #dbddde;
+	border: none;
+}
+.pro-img1{
+	background-image: url("../images/dianji1.png");
+}
+.pro-img2{
+	background-image: url("../images/jiaju.png");
+}
+.pro-img3{
+	background-image: url("../images/yifu1.png");
+}
+.pro-img4{
+	background-image: url("../images/xiezi.png");
+}
+.proimg{
+	height: 3em;
+	width: 50%;
+}
+.probox{
+	border:1px solid #abacac;
+	margin: .5em 1em;
+	padding: 1em;
+	
+}
+.a{
+	color: #747474;
+}
+.serimg{
+ height: 5em;
+ width: 10em;
+}
+.ser-img1{
+	background-image: url("../images/fragment_a_community_service.png");
+	height: 10em;
+	width: 10em;
+}
+
+.ser-img2{
+	background-image: url("../images/fragment_a_property_service.png");
+	 height: 5em;
+     width: 20em;
+}
+.ser-img3{
+	background-image: url("../images/fragment_a_sake.png");
+}
+.ser-img4{
+	background-image: url("../images/fragment_a_lucky.png");
+}
+
